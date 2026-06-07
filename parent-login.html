@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parent Login | JGS Parent Portal</title>
+  <link rel="stylesheet" href="css/dashboard-v13.css">
+  <script src="js/auth-enhancements.js" defer></script>
+</head>
+<body class="login-page">
+  <section class="login-brand">
+    <span class="brand-pill">JGS Group of Institutes</span>
+    <h1>Parent Portal</h1>
+    <p>Simple access for guardians to view attendance, marks, fees, notices, and teacher messages for AY 2025-26.</p>
+    <div class="benefits">
+      <div class="benefit"><strong>Clear ward updates</strong><br><span>See attendance, marks, and fee status in one place.</span></div>
+      <div class="benefit"><strong>Message teachers</strong><br><span>Send simple questions to faculty without admin screens.</span></div>
+      <div class="benefit"><strong>JGS Group of Institutes</strong><br><span>Andheri East, Mumbai | AICTE Approved | Affiliated to University of Mumbai</span></div>
+    </div>
+  </section>
+  <main class="login-panel">
+    <form class="login-card" id="parent-login-form">
+      <h2>Parent Login</h2>
+      <p class="muted">Use your registered mobile number or your child's roll number.</p>
+      <div class="field">
+        <label for="identifier">Mobile number or roll number</label>
+          <input id="identifier" name="identifier" required autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="pin">PIN or password</label>
+        <div class="password-row">
+          <input id="pin" name="pin" required type="password" autocomplete="current-password">
+          <button class="secondary" id="toggle-password" type="button">Show</button>
+        </div>
+      </div>
+      <p class="form-status" id="login-status"></p>
+      <div class="actions">
+        <button class="secondary" id="send-otp" type="button">Send OTP</button>
+        <button type="submit">Login</button>
+      </div>
+      <p><a class="muted" href="https://jgs.edu.in">Back to public website</a></p>
+    </form>
+  </main>
+  <script src="js/config.js"></script>
+  <script src="js/auth-client.js"></script>
+  <script src="js/pages/login.js"></script>
+</body>
+</html>
+

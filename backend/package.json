@@ -1,0 +1,11 @@
+{
+  "name": "jgs-parent-portal-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free backend API for the JGS Parent Portal.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check api/index.js && node --check data/store.js"
+  }
+}
